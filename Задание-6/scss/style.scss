@@ -1,0 +1,92 @@
+.card{
+    justify-content: center;
+    display: flex;
+    background: hsl(217, 54%, 11%);
+    padding: 50px;
+
+    &__block{
+        background: hsl(216, 50%, 16%);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 320px;
+        box-shadow: 0 10px 10px 15px hsl(215, 32%, 27%, 0.1);
+    }
+
+    &__img{
+        max-width: 320px;
+        border-radius: 10px;
+    }
+
+    &__title{
+        cursor: pointer;
+        color: hsl(0, 0%, 100%);
+        font-weight: 600;
+        font-family: Outfit;
+
+        &:hover{
+            color: hsl(178, 100%, 50%);
+        }
+    }
+
+    &__descr{
+        font-size: 18px;
+        font-family: Outfit;
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+        margin: 0;
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid hsl(216, 21%, 31%);
+    }
+
+    &__carat{
+        display: flex;
+        align-items: center;
+    }
+
+    &__carat-img{
+        margin-right: 10px;
+    }
+
+    &__carat-descr{
+        font-weight: 600;
+        font-family: Outfit;
+        color: hsl(178, 100%, 50%);
+    }
+
+    &__time{
+        display: flex;
+        align-items: center;
+    }
+
+    &__time-img{
+        margin-right: 10px;
+    }
+
+    &__time-descr{
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+        font-weight: 400;
+        font-family: Outfit;
+    }
+
+    &__autor{
+        font-weight: 400;
+        font-family: Outfit;
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+    }
+
+    &__name{
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+
+        &:hover{
+            color: hsl(178, 100%, 50%);
+        }
+    }
+}
