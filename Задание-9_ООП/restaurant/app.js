@@ -15,11 +15,17 @@ class Resturan {
     }
 
     showStatus() {
-        if (this.open ) {
-            document.write("Open <br>")
-        }
-        else{
+        let currentHours = new Date().getHours();
+        let currentDay = new Date().getDay();
+
+        if(currentDay >= 6) {
             document.write("Close <br>")
+        } else {
+            if (currentHours > 10 && currentHours < 22) {
+                document.write("Open <br>")
+            } else {
+                document.write("Close <br>")
+            }
         }
     }
 
